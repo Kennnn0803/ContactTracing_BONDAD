@@ -29,12 +29,14 @@ namespace ContactTracing_Bondad
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.bshow = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tboxshow = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // bshow
             // 
+            this.bshow.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.bshow.Location = new System.Drawing.Point(112, 26);
             this.bshow.Name = "bshow";
             this.bshow.Size = new System.Drawing.Size(120, 58);
@@ -43,23 +45,24 @@ namespace ContactTracing_Bondad
             this.bshow.UseVisualStyleBackColor = true;
             this.bshow.Click += new System.EventHandler(this.bshow_Click);
             // 
-            // textBox1
+            // tboxshow
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.textBox1.Location = new System.Drawing.Point(12, 111);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(329, 300);
-            this.textBox1.TabIndex = 1;
+            this.tboxshow.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.tboxshow.Location = new System.Drawing.Point(12, 111);
+            this.tboxshow.Multiline = true;
+            this.tboxshow.Name = "tboxshow";
+            this.tboxshow.Size = new System.Drawing.Size(329, 300);
+            this.tboxshow.TabIndex = 1;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(353, 423);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tboxshow);
             this.Controls.Add(this.bshow);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form2";
             this.Text = "Form2";
             this.ResumeLayout(false);
@@ -70,6 +73,6 @@ namespace ContactTracing_Bondad
         #endregion
 
         private System.Windows.Forms.Button bshow;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tboxshow;
     }
 }

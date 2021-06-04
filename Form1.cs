@@ -42,7 +42,7 @@ namespace ContactTracing_Bondad
 
 
             StreamWriter Information;
-            string path = @"C:\Users\aaron\Desktop\PROJECT OOP\ContactTracing_Bondad\Contact Tracing Information.txt";
+            string path = @"..\..\..\Contact Tracing Information.txt";
             Information = File.CreateText(path);
             Information.WriteLine("Name: " + name); 
             Information.WriteLine("Age: " + age);

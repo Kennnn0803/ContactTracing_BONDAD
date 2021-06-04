@@ -17,3 +17,4 @@ C:\Users\aaron\Desktop\PROJECT OOP\ContactTracing_Bondad\obj\Debug\net5.0-window
 C:\Users\aaron\Desktop\PROJECT OOP\ContactTracing_Bondad\obj\Debug\net5.0-windows\ref\ContactTracing_Bondad.dll
 C:\Users\aaron\Desktop\PROJECT OOP\ContactTracing_Bondad\obj\Debug\net5.0-windows\ContactTracing_Bondad.pdb
 C:\Users\aaron\Desktop\PROJECT OOP\ContactTracing_Bondad\obj\Debug\net5.0-windows\ContactTracing_Bondad.genruntimeconfig.cache
+C:\Users\aaron\Desktop\PROJECT OOP\ContactTracing_Bondad\obj\Debug\net5.0-windows\ContactTracing_Bondad.Properties.Resources.resources

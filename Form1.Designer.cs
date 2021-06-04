@@ -29,6 +29,7 @@ namespace ContactTracing_Bondad
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.bsave = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lname = new System.Windows.Forms.Label();
@@ -232,7 +233,7 @@ namespace ContactTracing_Bondad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(427, 508);
             this.Controls.Add(this.bopen);
             this.Controls.Add(this.cbno);
@@ -256,6 +257,7 @@ namespace ContactTracing_Bondad
             this.Controls.Add(this.bsave);
             this.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";

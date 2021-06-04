@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,7 +20,10 @@ namespace ContactTracing_Bondad
 
         private void bshow_Click(object sender, EventArgs e)
         {
-            string 
+            string path = @"..\..\..\Contact Tracing Information.txt";
+            var read = File.ReadAllText(path);
+            tboxshow.Text = read;
+
         }
     }
 }
