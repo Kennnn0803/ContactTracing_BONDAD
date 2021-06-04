@@ -41,11 +41,9 @@ namespace ContactTracing_Bondad
                 question = "hasn't experienced COVID symptoms for the past 14days.";
 
 
-
-
-
             StreamWriter Information;
-            Information = File.CreateText("Contact Tracing Information.txt");
+            string path = @"C:\Users\aaron\Desktop\PROJECT OOP\ContactTracing_Bondad\Contact Tracing Information.txt";
+            Information = File.CreateText(path);
             Information.WriteLine("Name: " + name); 
             Information.WriteLine("Age: " + age);
             Information.WriteLine("Address: " + address);
@@ -60,6 +58,12 @@ namespace ContactTracing_Bondad
 
         private void tbname_TextChanged(object sender, EventArgs e)
         {
+        }
+
+        private void bopen_Click(object sender, EventArgs e)
+        {
+            Form2 nextform = new Form2();
+            nextform.ShowDialog();
         }
     }
 }

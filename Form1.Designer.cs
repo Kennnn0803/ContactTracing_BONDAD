@@ -48,11 +48,12 @@ namespace ContactTracing_Bondad
             this.lblast = new System.Windows.Forms.Label();
             this.cbyes = new System.Windows.Forms.CheckBox();
             this.cbno = new System.Windows.Forms.CheckBox();
+            this.bopen = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // bsave
             // 
-            this.bsave.Location = new System.Drawing.Point(124, 441);
+            this.bsave.Location = new System.Drawing.Point(19, 441);
             this.bsave.Name = "bsave";
             this.bsave.Size = new System.Drawing.Size(185, 55);
             this.bsave.TabIndex = 0;
@@ -217,12 +218,23 @@ namespace ContactTracing_Bondad
             this.cbno.Text = "No";
             this.cbno.UseVisualStyleBackColor = true;
             // 
+            // bopen
+            // 
+            this.bopen.Location = new System.Drawing.Point(213, 441);
+            this.bopen.Name = "bopen";
+            this.bopen.Size = new System.Drawing.Size(185, 55);
+            this.bopen.TabIndex = 19;
+            this.bopen.Text = "Open File";
+            this.bopen.UseVisualStyleBackColor = true;
+            this.bopen.Click += new System.EventHandler(this.bopen_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.ClientSize = new System.Drawing.Size(427, 508);
+            this.Controls.Add(this.bopen);
             this.Controls.Add(this.cbno);
             this.Controls.Add(this.cbyes);
             this.Controls.Add(this.lblast);
@@ -274,6 +286,7 @@ namespace ContactTracing_Bondad
         private System.Windows.Forms.Label lblast;
         private System.Windows.Forms.CheckBox cbyes;
         private System.Windows.Forms.CheckBox cbno;
+        private System.Windows.Forms.Button bopen;
     }
 }
 

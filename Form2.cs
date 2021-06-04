@@ -16,5 +16,10 @@ namespace ContactTracing_Bondad
         {
             InitializeComponent();
         }
+
+        private void bshow_Click(object sender, EventArgs e)
+        {
+            string 
+        }
     }
 }

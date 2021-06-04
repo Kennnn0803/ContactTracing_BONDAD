@@ -1,0 +1,7 @@
+Name: asd
+Age: asd
+Address: asd
+Mobile Number: asd
+Email: asd
+Gender: Male
+asd has experienced COVID symptoms for the past 14 days.

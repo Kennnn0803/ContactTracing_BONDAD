@@ -29,12 +29,47 @@ namespace ContactTracing_Bondad
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.bshow = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
+            // 
+            // bshow
+            // 
+            this.bshow.Location = new System.Drawing.Point(112, 26);
+            this.bshow.Name = "bshow";
+            this.bshow.Size = new System.Drawing.Size(120, 58);
+            this.bshow.TabIndex = 0;
+            this.bshow.Text = "Read File";
+            this.bshow.UseVisualStyleBackColor = true;
+            this.bshow.Click += new System.EventHandler(this.bshow_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.textBox1.Location = new System.Drawing.Point(12, 111);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(329, 300);
+            this.textBox1.TabIndex = 1;
+            // 
+            // Form2
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.ClientSize = new System.Drawing.Size(353, 423);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.bshow);
+            this.Name = "Form2";
             this.Text = "Form2";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button bshow;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
