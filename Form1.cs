@@ -35,16 +35,24 @@ namespace ContactTracing_Bondad
             else
                 gender = cbpref.Text;
 
+            if (cbyes.Checked == true)
+                question = "has experienced COVID symptoms for the past 14 days.";
+            else
+                question = "hasn't experienced COVID symptoms for the past 14days.";
+
 
 
 
 
             StreamWriter Information;
-            Information = File.CreateText("Information.txt");
-            Information.WriteLine(name); 
-            Information.WriteLine(age);
-            Information.WriteLine(address);
-            Information.Write(gender);
+            Information = File.CreateText("Contact Tracing Information.txt");
+            Information.WriteLine("Name: " + name); 
+            Information.WriteLine("Age: " + age);
+            Information.WriteLine("Address: " + address);
+            Information.WriteLine("Mobile Number: " + number);
+            Information.WriteLine("Email: " + email);
+            Information.WriteLine("Gender: " + gender);
+            Information.WriteLine(name + " " + question);
             Information.Close();
 
 

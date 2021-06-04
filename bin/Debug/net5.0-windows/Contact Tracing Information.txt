@@ -1,0 +1,7 @@
+Name: aaron
+Age: 19
+Address: pasig
+Mobile Number: 23
+Email: @gmaiiol
+Gender: Female
+aaron has experienced COVID symptoms for the past 14 days.
