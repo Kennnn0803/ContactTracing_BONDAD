@@ -39,11 +39,20 @@ namespace ContactTracing_Bondad
             this.laddress = new System.Windows.Forms.Label();
             this.lnumber = new System.Windows.Forms.Label();
             this.tbnumber = new System.Windows.Forms.TextBox();
+            this.lgender = new System.Windows.Forms.Label();
+            this.cbmale = new System.Windows.Forms.CheckBox();
+            this.cbfemale = new System.Windows.Forms.CheckBox();
+            this.cbpref = new System.Windows.Forms.CheckBox();
+            this.lbemail = new System.Windows.Forms.Label();
+            this.tbemail = new System.Windows.Forms.TextBox();
+            this.lblast = new System.Windows.Forms.Label();
+            this.cbyes = new System.Windows.Forms.CheckBox();
+            this.cbno = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // bsave
             // 
-            this.bsave.Location = new System.Drawing.Point(122, 376);
+            this.bsave.Location = new System.Drawing.Point(124, 441);
             this.bsave.Name = "bsave";
             this.bsave.Size = new System.Drawing.Size(185, 55);
             this.bsave.TabIndex = 0;
@@ -125,12 +134,104 @@ namespace ContactTracing_Bondad
             this.tbnumber.Size = new System.Drawing.Size(299, 28);
             this.tbnumber.TabIndex = 9;
             // 
+            // lgender
+            // 
+            this.lgender.AutoSize = true;
+            this.lgender.Location = new System.Drawing.Point(19, 260);
+            this.lgender.Name = "lgender";
+            this.lgender.Size = new System.Drawing.Size(63, 20);
+            this.lgender.TabIndex = 10;
+            this.lgender.Text = "Gender:";
+            // 
+            // cbmale
+            // 
+            this.cbmale.AutoSize = true;
+            this.cbmale.Location = new System.Drawing.Point(99, 260);
+            this.cbmale.Name = "cbmale";
+            this.cbmale.Size = new System.Drawing.Size(65, 24);
+            this.cbmale.TabIndex = 11;
+            this.cbmale.Text = "Male";
+            this.cbmale.UseVisualStyleBackColor = true;
+            // 
+            // cbfemale
+            // 
+            this.cbfemale.AutoSize = true;
+            this.cbfemale.Location = new System.Drawing.Point(180, 260);
+            this.cbfemale.Name = "cbfemale";
+            this.cbfemale.Size = new System.Drawing.Size(81, 24);
+            this.cbfemale.TabIndex = 12;
+            this.cbfemale.Text = "Female";
+            this.cbfemale.UseVisualStyleBackColor = true;
+            // 
+            // cbpref
+            // 
+            this.cbpref.AutoSize = true;
+            this.cbpref.Location = new System.Drawing.Point(267, 259);
+            this.cbpref.Name = "cbpref";
+            this.cbpref.Size = new System.Drawing.Size(151, 24);
+            this.cbpref.TabIndex = 13;
+            this.cbpref.Text = "Prefer Not To Say";
+            this.cbpref.UseVisualStyleBackColor = true;
+            // 
+            // lbemail
+            // 
+            this.lbemail.AutoSize = true;
+            this.lbemail.Location = new System.Drawing.Point(19, 297);
+            this.lbemail.Name = "lbemail";
+            this.lbemail.Size = new System.Drawing.Size(51, 20);
+            this.lbemail.TabIndex = 14;
+            this.lbemail.Text = "Email:";
+            // 
+            // tbemail
+            // 
+            this.tbemail.Location = new System.Drawing.Point(99, 294);
+            this.tbemail.Name = "tbemail";
+            this.tbemail.Size = new System.Drawing.Size(299, 28);
+            this.tbemail.TabIndex = 15;
+            // 
+            // lblast
+            // 
+            this.lblast.Location = new System.Drawing.Point(19, 349);
+            this.lblast.Name = "lblast";
+            this.lblast.Size = new System.Drawing.Size(220, 45);
+            this.lblast.TabIndex = 16;
+            this.lblast.Text = "Had COVID 19 symptoms for the past 14 days?";
+            // 
+            // cbyes
+            // 
+            this.cbyes.AutoSize = true;
+            this.cbyes.Location = new System.Drawing.Point(234, 370);
+            this.cbyes.Name = "cbyes";
+            this.cbyes.Size = new System.Drawing.Size(54, 24);
+            this.cbyes.TabIndex = 17;
+            this.cbyes.Text = "Yes";
+            this.cbyes.UseVisualStyleBackColor = true;
+            // 
+            // cbno
+            // 
+            this.cbno.AutoSize = true;
+            this.cbno.Location = new System.Drawing.Point(320, 370);
+            this.cbno.Name = "cbno";
+            this.cbno.Size = new System.Drawing.Size(51, 24);
+            this.cbno.TabIndex = 18;
+            this.cbno.Text = "No";
+            this.cbno.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.ClientSize = new System.Drawing.Size(427, 459);
+            this.ClientSize = new System.Drawing.Size(427, 508);
+            this.Controls.Add(this.cbno);
+            this.Controls.Add(this.cbyes);
+            this.Controls.Add(this.lblast);
+            this.Controls.Add(this.tbemail);
+            this.Controls.Add(this.lbemail);
+            this.Controls.Add(this.cbpref);
+            this.Controls.Add(this.cbfemale);
+            this.Controls.Add(this.cbmale);
+            this.Controls.Add(this.lgender);
             this.Controls.Add(this.tbnumber);
             this.Controls.Add(this.lnumber);
             this.Controls.Add(this.laddress);
@@ -164,6 +265,15 @@ namespace ContactTracing_Bondad
         private System.Windows.Forms.Label laddress;
         private System.Windows.Forms.Label lnumber;
         private System.Windows.Forms.TextBox tbnumber;
+        private System.Windows.Forms.Label lgender;
+        private System.Windows.Forms.CheckBox cbmale;
+        private System.Windows.Forms.CheckBox cbfemale;
+        private System.Windows.Forms.CheckBox cbpref;
+        private System.Windows.Forms.Label lbemail;
+        private System.Windows.Forms.TextBox tbemail;
+        private System.Windows.Forms.Label lblast;
+        private System.Windows.Forms.CheckBox cbyes;
+        private System.Windows.Forms.CheckBox cbno;
     }
 }
 

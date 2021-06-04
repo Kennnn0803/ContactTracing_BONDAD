@@ -20,12 +20,31 @@ namespace ContactTracing_Bondad
 
         private void bsave_Click(object sender, EventArgs e)
         {
+            string name, age, address, number, gender, email, question;
+
+            name = tbname.Text;
+            age = tbage.Text;
+            address = tbaddress.Text;
+            number = tbnumber.Text;
+            email = tbemail.Text;
+
+            if (cbmale.Checked == true)
+                gender = cbmale.Text;
+            else if (cbfemale.Checked == true)
+                gender = cbfemale.Text;
+            else
+                gender = cbpref.Text;
+
+
+
+
+
             StreamWriter Information;
             Information = File.CreateText("Information.txt");
-            Information.WriteLine("test");
-            Information.WriteLine("test2");
-            Information.Write("check");
-            Information.Write("check");
+            Information.WriteLine(name); 
+            Information.WriteLine(age);
+            Information.WriteLine(address);
+            Information.Write(gender);
             Information.Close();
 
 
@@ -33,8 +52,6 @@ namespace ContactTracing_Bondad
 
         private void tbname_TextChanged(object sender, EventArgs e)
         {
-            Console.ReadLine();
-            Console.ReadKey();
         }
     }
 }
